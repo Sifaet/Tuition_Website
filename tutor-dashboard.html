@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutor Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+ 
+  <!-- Navigation Bar -->
+  <nav class="bg-red-600 text-white p-2.5">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold">Tuition Solution</a>
+      <div class="flex items-center space-x-4">
+        <!-- Profile Button -->
+        <a href="profile-details.html" class="flex items-center space-x-2 bg-white text-red-600 px-4 py-2 rounded hover:bg-gray-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.936 0 5.637 1.007 7.879 2.804M15 10a3 3 0 11-6 0 3 3 0 016 0zM19.458 15A13.937 13.937 0 0112 21a13.937 13.937 0 01-7.458-6" />
+          </svg>
+          <span>Profile</span>
+        </a>
+        <!-- Sign-Out Button -->
+        <button onclick="signOut()" class="bg-white text-red-600 px-4 py-2 rounded hover:bg-gray-200">
+          Sign Out
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto mt-8">
+    <h1 class="text-3xl font-bold text-center mb-6">Welcome to Your Dashboard</h1>
+    <p class="text-center">Use the navigation bar above to access your profile or sign out.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+    <p>&copy; 2025 Tuition Solution. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function signOut() {
+      // Simulate sign-out by redirecting to the home page or login page
+      window.location.href = "sign-in.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Tuition - Tuition Solution</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation Bar -->
+  <nav class="bg-red-600 text-white p-4">
+    <div class="container mx-auto flex justify-between">
+      <a href="index.html" class="text-xl font-bold">Tuition Solution</a>
+      <div class="space-x-4">
+        <a href="sign-in.html" class="hover:underline">Sign Out</a>
+        <a href="media-dashboard.html" class="hover:underline">Back to Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold text-center mb-6">Post a Tuition Requirement</h2>
+    <form class="bg-white shadow-md rounded p-6 space-y-4 max-w-lg mx-auto">
+      <input type="text" placeholder="Teacher Needed (Male/Female)" class="w-full border rounded p-2" required>
+      <input type="text" placeholder="Student Name" class="w-full border rounded p-2" required>
+      <input type="text" placeholder="Class" class="w-full border rounded p-2" required>
+      <input type="text" placeholder="Subject" class="w-full border rounded p-2" required>
+      <input type="text" placeholder="Days (e.g., Mon, Wed)" class="w-full border rounded p-2" required>
+      <input type="text" placeholder="Time" class="w-full border rounded p-2" required>
+      <input type="text" placeholder="Salary" class="w-full border rounded p-2" required>
+      <input type="text" placeholder="Location" class="w-full border rounded p-2" required>
+      <input type="tel" placeholder="Contact" class="w-full border rounded p-2" required>
+      <input type="text" placeholder="Code" class="w-full border rounded p-2" required>
+      <input type="text" placeholder="Media Fee" class="w-full border rounded p-2" required>
+      <button type="submit" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-700 w-full">
+        Submit Tuition
+      </button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+    <p>&copy; 2025 Tuition Solution. All rights reserved.</p>
+  </footer>
+</body>
+</html>
