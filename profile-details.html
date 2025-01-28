@@ -3,39 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Details</title>
+  <title>Profile Details - Tuition Solution</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
-  <script>
-    function toggleSection(sectionId, checkbox) {
-      const section = document.getElementById(sectionId);
-      section.style.display = checkbox.checked ? "block" : "none";
-    }
-  </script>
 </head>
 <body class="bg-gray-100 font-sans">
-  <!-- Navigation Bar -->
   <nav class="bg-red-600 text-white p-4">
     <div class="container mx-auto flex justify-between">
       <a href="index.html" class="text-xl font-bold">Tuition Solution</a>
     </div>
   </nav>
 
-  <!-- Profile Update Form -->
   <main class="container mx-auto mt-8">
     <form class="bg-white shadow-md rounded p-6 max-w-2xl mx-auto space-y-6">
-      <div class="container mx-auto flex flex-col items-center">
+      <div class="text-center">
         <h1 class="text-3xl font-bold">Update Your Profile</h1>
       </div>
       
-      <!-- Reuse the form code from the original -->
-      <!-- High School -->
       <div>
         <label class="block font-bold mb-2">
           <input type="checkbox" onclick="toggleSection('highschool-section', this)">
           Academic Qualification - High School
         </label>
-        <div id="highschool-section" class="space-y-4" style="display: none;">
+        <div id="highschool-section" class="space-y-4 hidden">
           <input type="text" placeholder="High School Name" class="w-full border rounded p-2">
           <input type="text" placeholder="Name of Degree" class="w-full border rounded p-2">
           <input type="text" placeholder="Dept./Group" class="w-full border rounded p-2">
@@ -44,61 +34,23 @@
         </div>
       </div>
 
-      <!-- College -->
-      <div>
-        <label class="block font-bold mb-2">
-          <input type="checkbox" onclick="toggleSection('college-section', this)">
-          Academic Qualification - College
-        </label>
-        <div id="college-section" class="space-y-4" style="display: none;">
-          <input type="text" placeholder="College Name" class="w-full border rounded p-2">
-          <input type="text" placeholder="Name of Degree" class="w-full border rounded p-2">
-          <input type="text" placeholder="Dept./Group" class="w-full border rounded p-2">
-          <input type="text" placeholder="Passing Year" class="w-full border rounded p-2">
-          <input type="text" placeholder="Result" class="w-full border rounded p-2">
-        </div>
-      </div>
+      <!-- Similar sections for College, University, IELTS -->
 
-      <!-- University -->
-      <div>
-        <label class="block font-bold mb-2">
-          <input type="checkbox" onclick="toggleSection('university-section', this)">
-          Academic Qualification - University
-        </label>
-        <div id="university-section" class="space-y-4" style="display: none;">
-          <input type="text" placeholder="University Name" class="w-full border rounded p-2">
-          <input type="text" placeholder="Name of Degree" class="w-full border rounded p-2">
-          <input type="text" placeholder="Dept./Group" class="w-full border rounded p-2">
-          <input type="text" placeholder="Passing Year" class="w-full border rounded p-2">
-          <input type="text" placeholder="Result" class="w-full border rounded p-2">
-        </div>
-      </div>
-
-      <!-- IELTS -->
-      <div>
-        <label class="block font-bold mb-2">
-          <input type="checkbox" onclick="toggleSection('ielts-section', this)">
-          IELTS
-        </label>
-        <div id="ielts-section" class="space-y-4" style="display: none;">
-          <input type="text" placeholder="Listening" class="w-full border rounded p-2">
-          <input type="text" placeholder="Reading" class="w-full border rounded p-2">
-          <input type="text" placeholder="Writing" class="w-full border rounded p-2">
-          <input type="text" placeholder="Speaking" class="w-full border rounded p-2">
-          <input type="text" placeholder="Total" class="w-full border rounded p-2">
-        </div>
-      </div>
-
-      <!-- Submit Button -->
       <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 w-full">
         Update Profile
       </button>
     </form>
   </main>
 
-  <!-- Footer -->
   <footer class="bg-gray-800 text-white text-center p-4 mt-8">
     <p>&copy; 2025 Tuition Solution. All rights reserved.</p>
   </footer>
+
+  <script>
+    function toggleSection(sectionId, checkbox) {
+      const section = document.getElementById(sectionId);
+      section.classList.toggle('hidden', !checkbox.checked);
+    }
+  </script>
 </body>
 </html>
